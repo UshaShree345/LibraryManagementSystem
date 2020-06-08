@@ -1,0 +1,39 @@
+package com.capgemini.lmstesting.stepdefinitions;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class StudentSteps {
+
+	@Given("^User is on registration page$")
+	public void user_is_on_registration_page() throws Throwable {
+
+	}
+
+	@When("^User enters \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",(\\d+),\"([^\"]*)\"$")
+	public void user_enters(String arg2, String arg3, String arg4, String arg5, int arg6, String arg7) throws Throwable {
+
+	}
+
+	@Then("^User should be \"([^\"]*)\"$")
+	public void user_should_be(String arg1) throws Throwable {
+
+	}
+
+	@Given("^User is on Login page$")
+	public void user_is_on_Login_page() throws Throwable {
+
+	}
+
+	@When("^User enters \"([^\"]*)\",\"([^\"]*)\"$")
+	public void user_enters(String arg1, String arg2) throws Throwable {
+
+	}
+
+	@Then("^User should be logged in$")
+	public void user_should_be_logged_in() throws Throwable {
+
+	}
+
+}

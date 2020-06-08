@@ -1,0 +1,13 @@
+Feature: User Registration
+
+Scenario Outline:  User Registration with given details
+
+Given User is on home page
+When User clicks on registration button user navigates to registration page
+Then User enters <firstName>,<lastName>,<email>,<password>,<mobileNo>,<role>
+Then User should click on register button
+
+Examples:
+|firstName|lastName|email|password|mobileNo|role|
+|"Shiva"|"Kumar"|"shiva@gmail.com"|"Shiva@123"|9638527410|"admin"|
+|"Venkata"|"Chary"|"venkata@gmail.com"|"Venkata@123"|987654321|"student"|

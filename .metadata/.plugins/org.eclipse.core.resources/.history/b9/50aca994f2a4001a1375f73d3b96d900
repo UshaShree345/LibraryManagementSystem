@@ -1,0 +1,42 @@
+Feature: Librarian can add,delete,update,issue books and able to view books
+
+Background:
+
+Given Librarian is on Login page
+When Librarian enters "usha963@gmail.com","Usha@963"
+Then Librarian should be logged in
+
+Scenario Outline: Librarian should be able to add books
+Given Librarian is on adding book page
+When librarian enters <bookName>,<authorName>,<publisherName>,<copies>,<bookCategory>
+Then Book <status>
+
+Examples:
+|bookName|authorName|publisherName|copies|bookCategory|status|
+|"Geet Govind"|"Jaya Dev"|"GD publications"|15|"Critics"|"Added Successfully"|
+|"Convenient Act"|"Narendra Modi"|"Jaya publications"|15|"General"|"Added Successfully"|
+
+Scenario: Librarian should be able to remove books
+Given Librarian is on removing book page
+When librarian enters 2
+Then Book deleted successfully
+
+Scenario: Librarian should be able to issue books 
+Given Librarian is on issuing book page
+When librarian enters 12002,26
+Then Book issued successfully
+
+Scenario: Librarian should be able to view books
+Given Librarian is on  viewing books page based on names
+When librarian enters "History"
+Then show books based on name
+
+Scenario: Librarian should be able to view books
+Given Librarian is on  viewing books page based on author Name
+When librarian enters author name "Lorens"
+Then show books based on  author name
+
+Scenario: Librarian should be able to view books based on id
+Given Librarian is on  viewing books page based on book id
+When librarian enters book id 4
+Then show books based on  book id

@@ -1,0 +1,7 @@
+127.0.0.1 - - [01/Jun/2020:10:07:56 +0530] "GET / HTTP/1.1" 404 709
+127.0.0.1 - - [01/Jun/2020:10:08:18 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:10:11:55 +0530] "GET /lmsspringrest/booksByAuthor HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:10:19:45 +0530] "PUT /lmsspringrest/updateBook HTTP/1.1" 200 64
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:14:44:22 +0530] "GET /lmsspringrest/booksInfo HTTP/1.1" 200 1374
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:14:46:27 +0530] "GET /lmsspringrest/booksInfo HTTP/1.1" 200 1374
+0:0:0:0:0:0:0:1 - - [01/Jun/2020:14:47:09 +0530] "GET /lmsspringrest/booksInfo HTTP/1.1" 200 1374

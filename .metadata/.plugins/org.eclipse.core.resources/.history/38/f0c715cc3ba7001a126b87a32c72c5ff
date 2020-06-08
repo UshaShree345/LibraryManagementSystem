@@ -1,0 +1,133 @@
+package com.capgemini.lmstesting.stepdefinitions;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LibrarianSteps {
+
+	
+
+	@Given("^User is on registration page$")
+	public void user_is_on_registration_page() throws Throwable {
+
+		
+	}
+
+	@When("^User enters \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",(\\d+),\"([^\"]*)\"$")
+	public void user_enters(String arg1, String arg2, String arg3, String arg4, int arg5, String arg6)
+			throws Throwable {
+
+	}
+
+	@Then("^User should be \"([^\"]*)\"$")
+	public void user_should_be(String arg1) throws Throwable {
+		
+	}
+
+	@Given("^Librarian is on Login page$")
+	public void librarian_is_on_Login_page() throws Throwable {
+		
+	}
+
+	@When("^Librarian enters \"([^\"]*)\",\"([^\"]*)\"$")
+	public void librarian_enters(String arg1, String arg2) throws Throwable {
+		
+	}
+
+	@Then("^Librarian should be logged in$")
+	public void librarian_should_be_logged_in() throws Throwable {
+		
+	}
+
+	@Given("^Librarian is on adding book page$")
+	public void librarian_is_on_adding_book_page() throws Throwable {
+		
+	}
+
+	@When("^librarian enters \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",(\\d+),\"([^\"]*)\"$")
+	public void librarian_enters(String arg1, String arg2, String arg3, int arg4, String arg5) throws Throwable {
+		
+	}
+
+	@Then("^Book \"([^\"]*)\"$")
+	public void book(String arg1) throws Throwable {
+		
+	}
+
+	@Given("^Librarian is on removing book page$")
+	public void librarian_is_on_removing_book_page() throws Throwable {
+		 
+	}
+
+	@When("^librarian enters (\\d+)$")
+	public void librarian_enters(int arg1) throws Throwable {
+		
+	}
+
+	@Then("^Book deleted successfully$")
+	public void book_deleted_successfully() throws Throwable {
+	
+	}
+
+	@Given("^Librarian is on issuing book page$")
+	public void librarian_is_on_issuing_book_page() throws Throwable {
+		
+	}
+
+	@When("^librarian enters (\\d+),(\\d+)$")
+	public void librarian_enters(int arg1, int arg2) throws Throwable {
+	
+	}
+
+	@Then("^Book issued successfully$")
+	public void book_issued_successfully() throws Throwable {
+	
+	}
+	
+	@Given("^Librarian is on  viewing books page based on names$")
+	public void librarian_is_on_viewing_books_page_based_on_names() throws Throwable {
+		
+	}
+
+	@When("^librarian enters \"([^\"]*)\"$")
+	public void librarian_enters(String arg1) throws Throwable {
+		
+	}
+
+	@Then("^show books based on name$")
+	public void show_books_based_on_name() throws Throwable {
+		
+	}
+
+	@Given("^Librarian is on  viewing books page based on author Name$")
+	public void librarian_is_on_viewing_books_page_based_on_author_Name() throws Throwable {
+		
+	}
+
+	@When("^librarian enters author name \"([^\"]*)\"$")
+	public void librarian_enters_author_name(String arg1) throws Throwable {
+		
+	}
+
+	@Then("^show books based on  author name$")
+	public void show_books_based_on_author_name() throws Throwable {
+		
+	}
+
+	@Given("^Librarian is on  viewing books page based on book id$")
+	public void librarian_is_on_viewing_books_page_based_on_book_id() throws Throwable {
+		
+	}
+
+	@When("^librarian enters book id (\\d+)$")
+	public void librarian_enters_book_id(int arg1) throws Throwable {
+		
+	}
+
+	@Then("^show books based on  book id$")
+	public void show_books_based_on_book_id() throws Throwable {
+		
+	}
+
+}

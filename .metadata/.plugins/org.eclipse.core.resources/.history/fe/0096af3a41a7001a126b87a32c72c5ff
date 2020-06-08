@@ -1,0 +1,40 @@
+package com.capgemini.lmstesting.registerstepdefinitions;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class RegisterSteps {
+
+	WebDriver driver;
+	
+	
+	@Given("^User is on home page$")
+	public void user_is_on_home_page() {
+		driver = new ChromeDriver();
+		driver.get("http://localhost:4200");
+		driver.manage().window().maximize();
+	}
+
+	@When("^User clicks on registration button user navigates to registration page$")
+	public void user_clicks_on_registration_button_user_navigates_to_registration_page() {
+		driver.findElement(By.xpath("//a[@class='nav-link']")).click();
+	}
+
+	@Then("^User enters \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",(\\d+),\"([^\"]*)\"$")
+	public void user_enters(String arg1, String arg2, String arg3, String arg4, int arg5, String arg6) {
+	   
+	}
+
+	@Then("^User should click on register button$")
+	public void user_should_click_on_register_button() {
+	   
+	}
+
+
+
+}

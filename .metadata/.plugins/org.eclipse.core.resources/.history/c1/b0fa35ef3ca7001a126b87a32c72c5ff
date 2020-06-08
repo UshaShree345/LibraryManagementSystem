@@ -1,0 +1,102 @@
+package com.capgemini.lmstesting.stepdefinitions;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class StudentSteps {
+
+	
+	
+	@Given("^Student is on Login page$")
+	public void student_is_on_Login_page() throws Throwable {
+		
+	}
+
+	@When("^Student enters \"([^\"]*)\",\"([^\"]*)\"$")
+	public void student_enters(String arg1, String arg2) throws Throwable {
+		
+	}
+
+	@Then("^Student should be logged in$")
+	public void student_should_be_logged_in() throws Throwable {
+	
+	}
+
+	@Given("^Student is on request book page$")
+	public void student_is_on_request_book_page() throws Throwable {
+		
+
+	}
+
+	@When("^BookId  and UserId are given (\\d+), (\\d+)$")
+	public void bookid_and_UserId_are_given(int arg1, int arg2) throws Throwable {
+	
+	}
+
+	@Then("^Book Requested Successfully$")
+	public void book_Requested_Successfully() throws Throwable {
+	
+	}
+	
+	@Given("^Student is on returning book page$")
+	public void student_is_on_returning_book_page() throws Throwable {
+		
+		
+	}
+
+	@When("^Book  and User are given (\\d+), (\\d+)$")
+	public void book_and_User_are_given(int arg1, int arg2) throws Throwable {
+		
+	}
+
+	@Then("^Book Returned Successfully$")
+	public void book_Returned_Successfully() throws Throwable {
+	
+	}
+	
+	@Given("^Student is on  viewing books page based on names$")
+	public void student_is_on_viewing_books_page_based_on_names() throws Throwable {
+		
+	}
+
+	@When("^student enters \"([^\"]*)\"$")
+	public void student_enters(String arg1) throws Throwable {
+		
+	}
+
+	@Then("^show books based on bookname$")
+	public void show_books_based_on_bookname() throws Throwable {
+		
+	}
+
+	@Given("^Student is on  viewing books page based on author Name$")
+	public void student_is_on_viewing_books_page_based_on_author_Name() throws Throwable {
+		
+	}
+
+	@When("^student enters author name \"([^\"]*)\"$")
+	public void student_enters_author_name(String arg1) throws Throwable {
+		
+	}
+
+	@Then("^show books based on  authorname$")
+	public void show_books_based_on_authorname() throws Throwable {
+		
+	}
+
+	@Given("^Student is on  viewing books page based on book id$")
+	public void student_is_on_viewing_books_page_based_on_book_id() throws Throwable {
+		
+	}
+
+	@When("^student enters book id (\\d+)$")
+	public void student_enters_book_id(int arg1) throws Throwable {
+		
+	}
+
+	@Then("^show books based on  bookid$")
+	public void show_books_based_on_bookid() throws Throwable {
+		
+	}
+}

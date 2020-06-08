@@ -1,0 +1,16 @@
+package com.capgemini.lmsspringrest.testrunner;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+	@RunWith(Cucumber.class)
+	@CucumberOptions(features = "C:\\Users\\usha\\Downloads\\lmsspringrest\\lmsspringrest\\src\\test\\java\\com\\capgemini\\lmsspringrest\\features", 
+						glue = {"com/capgemini/lmsspringrest/stepdefinitions"}, 
+						dryRun = false,  
+						plugin = { "pretty", "html:target/cucumber" }, 
+						monochrome = true)
+	public class TestRunner {
+
+	}

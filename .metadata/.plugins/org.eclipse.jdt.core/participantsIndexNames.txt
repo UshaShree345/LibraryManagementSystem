@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\usha\Desktop\LmsParallelProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2053519330.index
+\lmsspring\src\main\resources
+C:\Users\usha\Desktop\LmsParallelProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1922769038.index
+\lmsspringrest\src\main\java

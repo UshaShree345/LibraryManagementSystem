@@ -1,0 +1,11 @@
+Feature: User Registration
+
+  Scenario Outline: User Registration with given details
+    Given User is on registration page
+    When User enters <firstName>,<lastName>,<email>,<password>,<mobileNo>,<role>
+    Then User should be <status>
+
+    Examples: 
+      | firstName | lastName  | email                  | password    | mobileNo   | role      | status                    |
+      | "vandana" | "maggidi" | "vandana123@gmail.com" | "Van23@"    | 9876543210 | "admin"   | "registered successfully" |
+      | "kiran"   | "reddy"   | "kiran@gmail.com"      | "Kiran@123" | 9876543210 | "student" | "registered successfully" |

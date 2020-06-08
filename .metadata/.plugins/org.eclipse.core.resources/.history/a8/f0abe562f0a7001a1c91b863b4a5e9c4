@@ -1,0 +1,37 @@
+Feature: Admin can add,delete,update,issue books and able to view books
+
+Background:
+
+Given Admin is on Login page
+When Admin enters "mamatha@gmail.com","Mamatha@123"
+Then Admin should be logged in
+
+Scenario Outline: Admin should be able to add books
+Given Admin is on adding book page
+When Admin enters <bookName>,<authorName>,<publisherName>,<copies>,<bookCategory>
+Then Book <status>
+
+Examples:
+|bookName|authorName|publisherName|copies|bookCategory|status|
+|"HalfGirlfriend"|"Chetan Bhagat"|"Rupa publications"|21|"novel"|"Added Successfully"|
+
+ 
+Scenario: Admin should be able to remove books
+Given Admin is on removing book page
+When Admin enters 6
+Then Book deleted successfully
+
+Scenario: Admin should be able to issue books 
+Given Admin is on issuing book page
+When Admin enters 12802,50
+Then Book issued successfully
+
+Scenario: User should be able to view books
+Given User is on  viewing books page based on names
+When user enters "maths"
+Then show books based on name
+
+Scenario: User should be able to view books
+Given User is on  viewing books page based on author Name
+When user enters author name "Ramanujan"
+Then show books based on  author name

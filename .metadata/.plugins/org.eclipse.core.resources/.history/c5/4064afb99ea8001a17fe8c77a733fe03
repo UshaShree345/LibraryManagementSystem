@@ -1,0 +1,5 @@
+package com.capgemini.lmstesting.stepdefinitions;
+
+public class RegistrationSteps {
+
+}

@@ -1,0 +1,17 @@
+127.0.0.1 - - [25/May/2020:11:36:41 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [25/May/2020:11:38:09 +0530] "OPTIONS /lmsspringrest/addUser HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [25/May/2020:11:38:11 +0530] "POST /lmsspringrest/addUser HTTP/1.1" 200 54
+0:0:0:0:0:0:0:1 - - [25/May/2020:11:38:34 +0530] "OPTIONS /lmsspringrest/login HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [25/May/2020:11:38:35 +0530] "POST /lmsspringrest/login HTTP/1.1" 200 213
+0:0:0:0:0:0:0:1 - - [25/May/2020:11:39:04 +0530] "GET /lmsspringrest/booksInfo HTTP/1.1" 200 832
+0:0:0:0:0:0:0:1 - - [25/May/2020:21:30:38 +0530] "OPTIONS /lmsspringrest/login HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [25/May/2020:21:30:38 +0530] "POST /lmsspringrest/login HTTP/1.1" 200 74
+127.0.0.1 - - [25/May/2020:21:31:36 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [25/May/2020:21:32:33 +0530] "POST /lmsspringrest/login HTTP/1.1" 200 216
+0:0:0:0:0:0:0:1 - - [25/May/2020:21:32:33 +0530] "POST /lmsspringrest/login HTTP/1.1" 200 216
+0:0:0:0:0:0:0:1 - - [25/May/2020:21:32:33 +0530] "POST /lmsspringrest/login HTTP/1.1" 200 216
+0:0:0:0:0:0:0:1 - - [25/May/2020:21:44:57 +0530] "GET /lmsspringrest/booksInfo HTTP/1.1" 200 832
+0:0:0:0:0:0:0:1 - - [25/May/2020:21:45:12 +0530] "GET /lmsspringrest/booksInfo HTTP/1.1" 200 832
+0:0:0:0:0:0:0:1 - - [25/May/2020:21:45:18 +0530] "OPTIONS /lmsspringrest/borrowedBooks HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [25/May/2020:21:45:18 +0530] "POST /lmsspringrest/borrowedBooks HTTP/1.1" 200 92
+0:0:0:0:0:0:0:1 - - [25/May/2020:22:34:57 +0530] "GET /lmsspringrest/booksInfo HTTP/1.1" 200 832

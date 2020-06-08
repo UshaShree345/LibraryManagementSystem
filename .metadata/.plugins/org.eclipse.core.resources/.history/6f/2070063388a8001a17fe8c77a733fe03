@@ -1,0 +1,53 @@
+Feature: Admin can add,delete,update,issue books and able to view books
+
+Background:
+
+Given Admin is on Login page
+When Admin enters "mamatha@gmail.com","Mamatha@123"
+Then Admin should be logged in
+
+Scenario: Admin should be able to update books
+Given Admin is on updating book page
+When Admin enters 49,"Biology","Ratnakar","SM Publications","20","Sciencee"
+Then Book updated successfully
+
+Scenario Outline: Admin should be able to add books
+Given Admin is on adding book page
+When Admin enters <bookName>,<authorName>,<publisherName>,<copies>,<bookCategory>
+Then Book <status>
+
+Examples:
+|bookName|authorName|publisherName|copies|bookCategory|status|
+|"HalfGirlfriend"|"Chetan Bhagat"|"Rupa publications"|21|"novel"|"Added Successfully"|
+
+ 
+#Scenario: User should be able to view books based on names
+#Given User is on  viewing books page based on names
+#When user enters "maths"
+#Then show books based on name
+
+Scenario: Admin should be able to remove books
+Given Admin is on removing book page
+When Admin enters 6
+Then Book deleted successfully
+
+Scenario: Admin should be able to issue books 
+Given Admin is on issuing book page
+When Admin enters 12802,50
+Then Book issued successfully
+
+Scenario: Admin should be able to users
+Given: Admin is on users page
+When: Admin clicks on show users button
+Then  list of users should be displayed
+
+#Scenario: User should be able to view books
+#Given User is on  viewing books page based on author Name
+#When user enters author name "Jaya Dev"
+#Then show books based on  author name
+
+
+#Scenario: User should be able to view books based on category
+#Given User is on  viewing books page based on book category
+#When user enters book category "social"
+#Then show books based on  book category

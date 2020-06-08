@@ -1,0 +1,5 @@
+package com.capgemini.lmstesting.testrunner;
+
+public class RegisterTestRunner {
+
+}
